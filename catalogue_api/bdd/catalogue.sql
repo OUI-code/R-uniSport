@@ -1,0 +1,11 @@
+CREATE DATABASE IF NOT EXISTS catalogue;
+USE catalogue;
+
+CREATE TABLE equipements (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nom VARCHAR(255) NOT NULL,
+    type VARCHAR(100) NOT NULL,
+    lieu VARCHAR(255),
+    capacite INT,
+    actif BOOLEAN NOT NULL DEFAULT TRUE
+);
